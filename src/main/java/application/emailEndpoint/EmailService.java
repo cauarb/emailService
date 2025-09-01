@@ -13,8 +13,8 @@ public class EmailService {
 
     public void enviarEmail(ContactRequest contato) {
         SimpleMailMessage mensagem = new SimpleMailMessage();
-        mensagem.setFrom("SEU_EMAIL@gmail.com"); // precisa ser o mesmo do application.properties
-        mensagem.setTo("SEU_EMAIL@gmail.com");   // para onde você quer receber
+        mensagem.setFrom("cauarbeiro30@gmail.com"); //application.properties
+        mensagem.setTo("cauarbeiro30@gmail.com");
         mensagem.setSubject("Novo contato do portfólio - " + contato.getNome());
         mensagem.setText(
                 "Nome: " + contato.getNome() + "\n" +
